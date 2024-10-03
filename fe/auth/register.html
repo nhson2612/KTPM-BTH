@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ĐĂNG KÝ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="register.js"></script>
+  </head>
+  <body>
+    <main class="w-full flex items-center justify-center py-4">
+      <div class="max-w-lg w-full shadow-lg">
+        <section
+          class="flex flex-col items-center space-y-8 bg-blue-500 p-8 rounded-b-xl"
+        >
+          <h2 class="text-2xl font-normal text-center text-white">Đăng ký</h2>
+          <i class="fa-regular fa-user text-4xl p-2 rounded-full bg-white"></i>
+        </section>
+        <form
+          id="login-form"
+          class="flex flex-col items-center justify-center space-y-4 p-8"
+        >
+          <div class="space-y-2 w-full">
+            <label for="username" class="text-sm text-gray-600"
+              >Tên đăng nhập</label
+            >
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="Tên đăng nhập"
+              class="w-full py-2 px-4 rounded-full border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div class="space-y-2 w-full">
+            <label for="password" class="text-sm text-gray-600">Mật khẩu</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Mật khẩu"
+              class="w-full py-2 px-4 rounded-full border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div class="space-y-2 w-full">
+            <label for="confirm-password" class="text-sm text-gray-600"
+              >Nhập lại mật khẩu</label
+            >
+            <input
+              id="confirm-password"
+              name="confirm-password"
+              type="password"
+              placeholder="Nhập lại mật khẩu"
+              class="w-full py-2 px-4 rounded-full border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <a href="#" class="text-sm self-end">Quên mật khẩu?</a>
+          <button class="w-full bg-blue-500 text-white p-2 rounded-full">
+            Đăng ký
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

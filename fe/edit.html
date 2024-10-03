@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHỈNH SỬA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="p-4 bg-blue-500 w-full sticky top-0 z-50 flex justify-center items-center"
+    >
+      <div class="max-w-screen-lg w-full">
+        <input
+          type="text"
+          placeholder="Tìm kiếm"
+          class="w-[40%] py-2 px-4 rounded-full border border-blue-500 focus:outline-none"
+        />
+      </div>
+    </header>
+    <main
+      class="w-full bg-neutral-100 flex flex-col gap-8 items-center py-8 px-4 min-h-screen"
+    >
+      <h1 class="text-2xl font-bold text-center text-blue-500">CHỈNH SỬA</h1>
+      <form
+        id="edit-form"
+        action=""
+        class="w-full max-w-screen-lg p-4 space-y-2 h-full"
+      >
+        <div class="space-y-1">
+          <label for="ho_va_ten" class="font-semibold">Họ và tên</label>
+          <input
+            type="text"
+            id="ho_va_ten"
+            name="ho_va_ten"
+            class="w-full py-2 px-4 rounded-lg border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+        </div>
+        <div class="space-y-1">
+          <label for="ngay_sinh" class="font-semibold">Ngày sinh</label>
+          <input
+            type="date"
+            id="ngay_sinh"
+            name="ngay_sinh"
+            class="w-full py-2 px-4 rounded-lg border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+        </div>
+        <div class="space-y-1">
+          <label for="cccd" class="font-semibold">CCCD</label>
+          <input
+            type="text"
+            id="cccd"
+            name="cccd"
+            class="w-full py-2 px-4 rounded-lg border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+        </div>
+        <div class="space-y-1">
+          <label for="quan_he" class="font-semibold">Quan hệ</label>
+          <input
+            type="text"
+            id="quan_he"
+            name="quan_he"
+            class="w-full py-2 px-4 rounded-lg border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+        </div>
+        <div class="space-y-1">
+          <label for="cong_viec" class="font-semibold">Nghề nghiệp</label>
+          <input
+            type="text"
+            id="cong_viec"
+            name="cong_viec"
+            class="w-full py-2 px-4 rounded-lg border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            id="delete-btn"
+            type="button"
+            class="w-full py-2 px-4 rounded-lg border border-red-500 text-red-500 bg-white mt-8"
+          >
+            Xoá thông tin
+          </button>
+          <button
+            type="submit"
+            class="w-full py-2 px-4 rounded-lg bg-blue-500 text-white mt-8"
+          >
+            Cập nhật
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="edit.js"></script>
+  </body>
+</html>
